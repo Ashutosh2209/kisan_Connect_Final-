@@ -5,28 +5,28 @@ const initialState = {
     cartPrice: 0,
     products: {
         moong: {
-            name: "Moong",
+            name: "Oranges",
             price: 12.00,
             tagName: "moong",
             numbers: 0,
             inCart: false
         },
         sunflower: {
-            name: "Sunflower oil",
+            name: "Onion",
             price: 70.00,
             tagName: "sunflower",
             numbers: 0,
             inCart: false
         },
         kabuli: {
-            name: "Kabuli Chana(1 kg)",
+            name: "Gobi",
             price: 80.00,
             tagName: "kabuli",
             numbers: 0,
             inCart: false
         },
         soyachunks: {
-            name: "Soya Chunks(1 kg)",
+            name: "Paneer",
             price: 90.00,
             tagName: "soyachunks",
             numbers: 0,

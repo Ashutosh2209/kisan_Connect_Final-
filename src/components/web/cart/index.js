@@ -40,7 +40,7 @@ function Cart({ cartProps, productQuantity, clearProduct }) {
                                             return (
                                                 <tr className="cross1" key={index}>
                                                     <td className="t-data ring-in">
-                                                        <Link className="at-in"><img src="images/wi1.png" className="img-responsive" alt="" /></Link>
+                                                        <Link className="at-in"><img src="kh.jpg" className="img-responsive" alt="" /></Link>
                                                         <div className="sed">
                                                             <h5>{product.name}</h5>
                                                         </div>
@@ -89,11 +89,11 @@ function Cart({ cartProps, productQuantity, clearProduct }) {
                                     </div>
                                     <div class="_22vQVX">You will save ₹0 on this order</div>
                                 </div>
-                                 {/* <Link to="/checkout"> 
+                                 <Link to="/checkout"> 
                                     <div className="process_checkout_bk">
                                         <span>Proceed to Checkout</span>
                                     </div>
-                                 </Link>  */}
+                                 </Link> 
                             </Card>
                         </Grid>
                     </Grid>
