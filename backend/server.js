@@ -4,10 +4,12 @@ const dotenv = require("dotenv");
 
 const connectDatabase = require("./config/database")
 
-dotenv.config({path:"backend/config/config.env"});
+require("dotenv").config({ path: "backend/config/config.env" });
 
-connectDatabase()
+connectDatabase();
 
-app.listen(process.env.PORT,()=>{
-    console.log(`server is working on http://localohost:${process.env.PORT}`)
+const port = process.env.PORT || 5000;
+
+app.listen(port,()=>{
+    console.log(`server is working on http://localhost:${port}`)
 })
