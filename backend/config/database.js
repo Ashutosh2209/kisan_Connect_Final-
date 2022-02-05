@@ -1,8 +1,12 @@
 const mongoose = require("mongoose");
+require("dotenv").config({ path: "config/config.env" });
+
+// const dotenv = require("dotenv");
+// const db = process.env.DB_URI; 
 
 const connectDatabase = () => {
   mongoose
-    .connect("mongodb://localhost:27017/kisan_connect", {
+    .connect(process.env.DB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       //   useCreateIndex: true,

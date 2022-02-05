@@ -8,7 +8,7 @@ require("dotenv").config({ path: "backend/config/config.env" });
 
 connectDatabase();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 9000;
 
 app.listen(port,()=>{
     console.log(`server is working on http://localhost:${port}`)
