@@ -20,3 +20,16 @@ export const getCartNumbers = () => {
     });
   };
 };
+
+
+
+// export const productToCart = (productName) => {
+//   return (dispatch) => {
+//     console.log("prduct to cart",productName);
+
+//     dispatch({
+//       type: PRODUCT_TO_CART,
+//       payload: productName,
+//     });
+//   };
+// };

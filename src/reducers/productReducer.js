@@ -4,6 +4,7 @@ import {
   INCREASE_QUANTITY,
   DECREASE_QUANTITY,
   CLEAR_PRODUCT,
+  PRODUCT_TO_CART,
 } from "../actions/types";
 
 // const initialState = {
@@ -41,6 +42,21 @@ export default (state = initialState, action ) => {
       return {
         ...state,
       };
+
+      // case PRODUCT_TO_CART:
+      //       productSelected = { ...state.products[action.payload] }
+      //       productSelected.numbers += 1;
+      //       productSelected.inCart = true;
+
+      //       return {
+      //           ...state,
+      //           cart: state.cart + 1,
+      //           cartPrice: state.cartPrice + state.products[action.payload].price,
+      //           products: {
+      //               ...state.products,
+      //               [action.payload]: productSelected
+      //           }
+      //       }
 
     default:
       return state;
