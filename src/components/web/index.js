@@ -12,8 +12,8 @@ import Faq from './customer/faq';
 import Term from './customer/term';
 import Desclaimer from './customer/desclaimer';
 import Privacypolicy from './customer/privacy-policy';
-import Login from '../auth/login';
-import Register from '../auth/register';
+import Login from '../auth/login/Login';
+import Register from '../auth/register/Register';
 import Category from './category-mobile'
 import Cart from './cart';
 import Checkout from './checkout';

@@ -14,6 +14,7 @@ const Kitchenitem = (props) => {
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.cartState.products);
   const chk = posts[1];
+  
   // Object.values(chk).map((e) => {
   //   return console.log("data from map", e);
   // });

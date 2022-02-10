@@ -4,7 +4,6 @@ import {
   INCREASE_QUANTITY,
   DECREASE_QUANTITY,
   CLEAR_PRODUCT,
-  PRODUCT_TO_CART,
 } from "../actions/types";
 
 // const initialState = {

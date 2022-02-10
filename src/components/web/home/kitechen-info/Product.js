@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./kitechen.css";
-import { productToCart } from "../../../../actions/productActions";
+import { addItemsToCart } from "../../../../actions/cartActions";
+import { useSelector, useDispatch } from "react-redux";
 
+const Product = ({ props }) => {
+  //console.log("props", props);
+  const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
+  // const post = useSelector((state) => state.cart.cartItems);
+  //console.log("post data", post);
 
-const product = ({ props }) => {
-  console.log("props", props);
+  const addToCartHandler = (id) => {
+    //console.log("props", props._id);
+    dispatch(addItemsToCart(id, quantity));
+    //alert.success("Item Added To Cart");
+  };
+  useEffect(() => {}, []);
+
   return (
-    
     <div className="col-md-3 pro-1">
       <div className="col-m">
         <Link
@@ -35,10 +46,12 @@ const product = ({ props }) => {
             <div className="clearfix" />
           </div>
           <div className="add">
-          <button
-                      className="btn btn-danger my-cart-btn my-cart-b"
-                      onClick={() => props.productToCart("sunflower")}
-                    >
+            <button
+              className="btn btn-danger my-cart-btn my-cart-b"
+              //onClick={addToCartHandler}//() => {console.log(props); addToCartHandler(props)}}
+
+              onClick={() => addToCartHandler(props._id)}
+            >
               Add to Cart
             </button>
           </div>
@@ -48,4 +61,4 @@ const product = ({ props }) => {
   );
 };
 
-export default product;
+export default Product;

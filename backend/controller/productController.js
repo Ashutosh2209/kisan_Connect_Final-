@@ -35,7 +35,7 @@ exports.getAllproducts = catchAsyncErrors(async (req, res) => {
 //Get product Details
 
 exports.getProductDetails = catchAsyncErrors(async (req, res, next) => {
-  const product = await Product.findById(req.params.id);
+  const product = await Product.findById(req.params._id);
 
   if (!product) {
     return next(new ErrorHandler("Product not found", 404));

@@ -6,6 +6,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "./actions/productActions";
 
+
 /** Redux Provider */
 import { Provider } from "react-redux";
 
@@ -44,6 +45,7 @@ function App() {
         <Switch>
           <Route path="/" component={Web} />
           <Route component={NoMatch} />
+          
         </Switch>
       </BrowserRouter>
     </div>

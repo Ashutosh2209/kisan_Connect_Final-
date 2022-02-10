@@ -25,7 +25,7 @@ router
   .delete(isAuthenticatedUser, authorizeRoles("admin"), deleteProduct)
   
 
-  router.route("/product/:id").get(getProductDetails);
+  router.route("/product/:_id").get(getProductDetails);
 
 
   router.route("/review").put(isAuthenticatedUser, createProductReview);
